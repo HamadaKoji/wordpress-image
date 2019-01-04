@@ -1,0 +1,13 @@
+version: 0.2
+
+env:
+  variables:
+    DOCKER_BUILDKIT: "1"
+
+phases:
+  pre_build:
+    commands:
+      - echo normal_build
+  build:
+    commands:
+      - docker build --rm --no-cache -t samplewordpress:normal
