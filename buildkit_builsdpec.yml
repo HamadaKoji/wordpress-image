@@ -10,4 +10,4 @@ phases:
       - echo normal_build
   build:
     commands:
-      - docker build --rm --no-cache -t samplewordpress:normal
+      - docker build --rm --no-cache -t samplewordpress:normal .
